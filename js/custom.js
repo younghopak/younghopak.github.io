@@ -2,136 +2,6 @@
 /*global $, jQuery, Modernizr, google, _gat*/
 /*jshint strict: true */
 
-
-
-/*************** COLORS TO BE ERASED WHEN INSTALLING THE THEME ***********/
-
-$(document).ready(function() {  
-
-    "use strict";
-
-
-    var $colorsHTML =
-    '<div class="styleSwitcher">' +
-    '<a href="#" id="showHideSwitcher"><i class="icon-cog"></i></a>' +
-    '<div id="switcherContent">' +
-    '<h1>style switcher</h1><ul class="switcher">' +
-    '<li><a href="css/orange.css" style="background:#F86D18">Orange</a></li>' +
-    '<li><a href="css/yellow.css" style="background:#FFCC00">Yellow</a></li>' +
-    '<li><a href="css/sea-green.css" style="background:#279B9B">Sea green</a></li>' +
-    '<li><a href="css/green.css" style="background:#A5C640">Green</a></li>' +
-    '<li><a href="css/blue.css" style="background:#136597">Dark blue</a></li>' +
-    '<li><a href="css/light.css" style="background:#44BCDD">Light blue</a></li>' +
-    '<li><a href="css/gold.css" style="background:#C09E5A">Pink</a></li>' +
-    '<li><a href="css/coffee.css" style="background:#846139">Coffee</a></li>' +
-    '<li><a href="css/red.css" style="background:#E44832">Red</a></li>' +
-    '<li><a href="css/dark.css" style="background:#141414">Black &amp; white</a></li>' +
-    '</ul>' + 
-    
-    '</div>';
-
-    if(!$('#onePage').length){
-        $colorsHTML +=
-        '<div class="layoutStyle">' +
-        '<a href="#" class="btnSwitcher full">Fullwidth</a>' +
-        '<a href="#" class="btnSwitcher box">Boxed</a>' +
-        '</div>';   
-    }
-
-
-    $colorsHTML +=
-    '<div class="headerSwitcher">' +
-    '<select name="header" class="header">' +
-    '<option value="noselection">Select header</option>' +
-    '<option value="">header default </option>' +
-    '<option value="header1">header style 1</option>' +
-    '<option value="header2">header style 2</option>' +
-    '<option value="header3">header style 3</option>' +
-    '<option value="header4">header style 4</option>' +
-    '<option value="header5">header style 5</option>' +
-    '</select>' +
-    '</div>' +
-    '</div>'; 
-
-    $("body").append($colorsHTML);  
-
-    var s = document.createElement("script");
-    s.type = "text/javascript";
-    s.src = "js-plugin/jquery-cookie/jquery.cookie.js";
-    $("body").append(s);  
-
-
-    if($.cookie("css")) {
-        $("#colors").attr("href",$.cookie("css"));
-    }
-
-    if($.cookie("bodyStyle")) {
-        $("body").attr('id', $.cookie("bodyStyle"));
-    }  
-
-    if($.cookie("header")) {
-        $("body").addClass($.cookie("header"));
-    }  
-
-
-    $(".switcher li a").click(function() { 
-        $("#colors").attr("href",$(this).attr("href"));
-        $.cookie("css",$(this).attr("href"));
-        return false;
-    });
-
-
-
-
-    $('.styleSwitcher .btnSwitcher').click(function (e) {
-        var $id;
-        if($(this).hasClass('full')){
-            $id= '';
-        }else{
-
-            $id= 'boxedLayout';
-        }
-
-        $("body").attr('id', $id);
-
-        $.cookie("bodyStyle", $id);
-        e.preventDefault();
-    });
-
-
-    $(".header").change(function() { 
-
-        if( $(this).val() != 'noselection'){
-
-            $("body").attr('class', $(this).val());
-            $.cookie("header",$(this).val());
-        }
-
-    });
-
-
-    $('#showHideSwitcher').click(function(e) { 
-        if($('.styleSwitcher').css('left') === '-170px'){
-            $('.styleSwitcher').animate(
-                {'left':0},
-                300, 'easeOutQuart',function() {
-                // stuff to do after animation is complete
-            });
-
-        }else{
-            $('.styleSwitcher').animate(
-                {'left':-170},
-                300, 'easeInQuart',function() {
-                // stuff to do after animation is complete
-            });
-        }
-
-        e.preventDefault();
-    });
-});
-
-/*************** COLORS TO BE ERASED WHEN INSTALLING THE THEME ***********/
-
 /*************** GOOGLE ANALYTICS ***********/
 
 /*************** REPLACE WITH YOUR OWN UA NUMBER ***********/
@@ -1478,16 +1348,16 @@ function initialize(id) {
 
 	var locations = [
         //point number 1
-        ['451, Yeongtong-ro, Yeongtong-gu',],
+        ['Adaptable Human Solutions', '109 Mapo DaeRo, Mapo-gu, Seoul', 37.5448909, 126.95060660000001],
 
         //point number 2
-        ['Suwon-si', 'Gyeonggi-do', 'South Korea', 37.2605976, 127.07425220000005],
+        [],
 
         //point number 3 
-        ['Located in Suwon', 'South Korea'],
+        [],
 
         //point number 4
-        ['I\'ll definitly be there one day', 'Suwon', 37.2605976, 127.07425220000005] 
+        [] 
         ];
 
         /*** DON'T CHANGE ANYTHING PASSED THIS LINE ***/

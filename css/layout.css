@@ -676,7 +676,6 @@ hr.lineSmall {
 	}
 	.pt40 {
 		padding-top:4em;
-        padding-bottom: 4em;
 	}
 	.boxIconServices h2 {
 		font-size:20px;
@@ -985,7 +984,6 @@ hr {
 }
 .btn-border.btn-lg {
 	padding:9px 17px;
-    margin-top: 20px;
 }
 .btn-border.btn-sm {
 	padding: 0px 6px;
@@ -1088,13 +1086,13 @@ a.btnRight {
 	background-image:url('../images/theme-pics/parallax-1.jpg');
 }
 .image-2 {
-	background-image:url('../images/theme-pics/circles.jpg');
+	background-image:url('../images/theme-pics/parallax-2.jpg');
 }
 .image-3 {
 	background-image:url('../images/theme-pics/parallax-3.jpg');
 }
 .image-4 {
-	background-image:url('../images/theme-pics/bench_cropped.jpg');
+	background-image:url('../images/theme-pics/parallax-4.jpg');
 }
 .image-5 {
 	background-image:url('../images/theme-pics/parallax-5.jpg');
@@ -1127,7 +1125,7 @@ a.btnRight {
 	height:350px;
 }
 #homeFullScreen {
-	background-image:url('../images/slider/super/supersized-1.jpg');
+	background-image:url('../images/theme-pics/bench_cropped.jpg');
 	overflow:hidden;
 }
 #homeFullScreen .maskParent {

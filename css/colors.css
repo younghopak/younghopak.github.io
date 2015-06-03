@@ -389,7 +389,7 @@ ul.quickMenu li a:hover {
 .navbar-default .navbar-nav>li>a:focus,
 .navbar-default .navbar-nav>.active>a:hover,
 .navbar-default .navbar-nav>.active>a:focus {
-	color:#141414;
+	color:#eee;
 	background:none;
 }
 .navbar-nav>li.sep:before {
