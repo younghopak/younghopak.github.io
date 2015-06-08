@@ -1086,7 +1086,7 @@ a.btnRight {
 	background-image:url('../images/theme-pics/parallax-1.jpg');
 }
 .image-2 {
-	background-image:url('../images/theme-pics/abstract-bw-bkgrd.jpg');
+	background-image:url('../images/theme-pics/parallax-2.jpg');
 }
 .image-3 {
 	background-image:url('../images/theme-pics/parallax-3.jpg');
@@ -1913,6 +1913,11 @@ a#nextslide:hover,a#prevslide:hover {
 .owl-carousel .item {
 	position:relative;
 }
+
+.owl-carousel .item h2{
+    color: aliceblue;
+}
+
 .owlCaption {
 	padding:22px;
 	position:absolute;

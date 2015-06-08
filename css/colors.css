@@ -149,6 +149,11 @@ blockquote small {
 h1,h2,h3,h4,h5,h6 {
 	color:#333;
 }
+
+h1 .logo_blue {
+    color: #152643;
+}
+
 h2 i {
 	color:#999
 }
@@ -361,7 +366,7 @@ ul.quickMenu li a:hover {
 /* MAIN MENU ================================================== */
 
 #mainHeader {
-	background-color:#fefefe;
+	background-color:black;
 	border-bottom:1px solid rgba(0,0,0,0.075);
 	box-shadow:0 0 10px rgba(0,0,0,0.05);
 }
