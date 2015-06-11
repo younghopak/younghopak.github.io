@@ -1343,15 +1343,15 @@ function appendBootstrap() {
 function initialize(id) {
 	"use strict";
 	var image = 'images/icon-map.png';
-
-	var overlayTitle = 'Agencies';
+ 
+	var overlayTitle = 'Map Marker';
 
 	var locations = [
         //point number 1
         ['Adaptable Human Solutions', '109 Mapo DaeRo, Mapo-gu, Seoul', 37.5448909, 126.95060660000001],
 
         //point number 2
-        [],
+        ['Gongdeok Station Exit 3', '423-33 Gongdeok-dong, Mapo-gu, Seoul'],
 
         //point number 3 
         [],
@@ -1364,14 +1364,16 @@ function initialize(id) {
         id = (id === undefined) ? 'mapWrapper' : id;
 
         var map = new google.maps.Map(document.getElementById(id), {
-        	mapTypeId: google.maps.MapTypeId.ROADMAP,
+        	
+            mapTypeId: google.maps.MapTypeId.ROADMAP,
         	scrollwheel: false,
         	zoomControl: true,
         	zoomControlOptions: {
         		style: google.maps.ZoomControlStyle.LARGE,
         		position: google.maps.ControlPosition.LEFT_CENTER
         	},
-        	streetViewControl:true,
+        	
+            streetViewControl:true,
         	scaleControl:false,
         	zoom: 14,
         	styles:[
@@ -1583,7 +1585,7 @@ function initializeSatellite(id) {
     "use strict";
     var image = 'images/icon-map.png';
 
-    var overlayTitle = 'Agencies';
+    var overlayTitle = 'Map Marker';
 
     var locations = [
         //point number 1

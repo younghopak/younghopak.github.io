@@ -682,7 +682,7 @@ nav#subnav ul li a.active,nav#subnav ul li a:hover {
 
 /*** supersized ***/
 #superSizedSlider h1,
-#fullScreenSliderWrapper h1 {
+#fullScreenSliderWrapper h1, h3 {
 	color:#fff;
 	text-shadow: 0 0 10px rgba(0,0,0,1);
 }
